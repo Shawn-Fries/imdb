@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ImdbClone</title>
+    <title>IMDb Clone</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <% if logged_in? %>
+      <%= button_to 'Log Out', session_url, method: :delete, class: 'log-out button' %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
