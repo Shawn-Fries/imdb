@@ -1,0 +1,7 @@
+<div class="splash">
+  <h1>IMDb Clone</h1>
+
+  <h2>Sign In</h2>
+  <%= render 'shared/user_form', user: @user, submit_text: 'Sign In', action: session_url %>
+  <%= link_to 'Sign Up', new_user_url %>
+</div>
