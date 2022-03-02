@@ -1,6 +1,4 @@
-class SessionsController < ApplicationController
-  before_action :redirect_if_logged_in, except: :destroy
-
+class Api::SessionsController < ApplicationController
   def new
     @user = User.new
   end
