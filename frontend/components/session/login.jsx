@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 class Login extends React.Component {
     constructor(props) {
@@ -35,6 +36,7 @@ class Login extends React.Component {
                         <button onClick={this.handleSubmit}>Sign-In</button>
                     </label>
                 </form>
+                <Link to="/signup">Create your IMDb Clone Account</Link>
             </div>
         )
     }

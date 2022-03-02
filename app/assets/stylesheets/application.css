@@ -49,6 +49,7 @@
   text-decoration: none;
  }
 
- #sign {
+ .session-form {
      background-color: lightgrey;
+     white-space: pre-line;
  }
