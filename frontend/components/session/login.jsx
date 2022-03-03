@@ -27,7 +27,7 @@ class Login extends React.Component {
 
     handleDemo(e) {
         e.preventDefault()
-        this.props.guest(this.state)
+        this.props.login({username: 'guestlogin', password: 'guestlogin'})
             .then(() => this.props.history.push('/'))
     }
 
