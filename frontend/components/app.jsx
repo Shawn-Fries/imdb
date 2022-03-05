@@ -8,7 +8,7 @@ import LoginContainer from './session/login_container'
 export default () => (
     <div>
         <Route exact path="/" component={Splash}/>
-        {/* <Route path="/movies/" component={MovieContainer} /> */}
+        {/* <Route path="/movies" component={MovieContainer} /> */}
         <AuthRoute path="/signup" component={SignupContainer} />
         <AuthRoute path="/login" component={LoginContainer} />
     </div>
