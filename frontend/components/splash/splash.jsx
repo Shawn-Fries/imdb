@@ -7,7 +7,9 @@ export default () => (
         <h1 id="splash-logo">IMDb Clone</h1>
         <Link className="signin-link" to="/login">Sign In</Link>
         <div id="spiderman">
-            <img src={spiderman}/>
+            <Link to="/movies">
+                <img src={spiderman}/>
+            </Link>
         </div>
     </div>
 )
