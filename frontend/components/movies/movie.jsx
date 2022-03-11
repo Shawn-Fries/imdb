@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link, useParams } from 'react-router-dom'
-import logo from '../../../app/assets/images/imdb_logo.png'
+import { Link } from 'react-router-dom'
 import spiderman from '../../../app/assets/images/spiderman.png'
 
 class Movie extends React.Component {
@@ -10,7 +9,7 @@ class Movie extends React.Component {
         this.state = {
             body: '',
             rating: 1,
-            author_id: this.props.user.id,
+            author_id: 1,
             movie_id: 1
         }
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -34,9 +33,8 @@ class Movie extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault()
-        console.log(this.state)
+        this.setState({author_id: this.props.user.id})
         this.props.createReview(this.props.match.params.movieId, this.state)
-        console.log(this.props.reviews)
         this.props.fetchReviews(this.props.match.params.movieId)
 
     }
@@ -60,29 +58,42 @@ class Movie extends React.Component {
             console.log(reviews)
         }
         return (
-            <div>
-                {"\n"}
-                <img src={logo} />
-                {"\n"}
-                <h2>{title}</h2>
-                {"\n"}
-                <h3>{genre}</h3>
-                {"\n"}
-                <h3>{release_date.substring(0, 10)}</h3>
-                {"\n"}
-                <h3>{description}</h3>
-                {"\n"}
-                <img src={spiderman}/>
-                {"\n"}
-                <h2>Reviews</h2>
+            <div className="movie">
+                <div id="info">
+                    <div>
+                        <h1 id="splash-logo">IMDb Clone</h1>
+                    </div>
+                    <div>
+                        <Link className="signin-link" to="/login">Sign In</Link>
+                    </div>
+                <div id="title">
+                    <h2>{title}</h2>
+                </div>
+                <div id="release_date">
+                    <h3>{release_date.substring(0, 4)}</h3>
+                </div>
+                <div id="genre">
+                    <h3>{genre}</h3>
+                </div>
+                    <div id="movie_image">
+                        <img src={spiderman} />
+                    </div>
+                <div id="description">
+                    <h3>{description}</h3>
+                </div>
+                </div>
+                
+                <div id="reviews">
+                <h2>User reviews</h2>
                 {"\n"}
                 {reviews.map(review => (
                     <div key={review.id}>
-                        <h2>Author: {review.author_id}</h2>
+                        <h3>Rating: {review.rating}</h3>
                         {"\n"}
                         <h3>Review: {review.body}</h3>
                         {"\n"}
-                        <h3>Rating: {review.rating}</h3>
+                        <h1>Author: {review.author_id}</h1>
+                        
                     </div>
                 ))}
                 <h2>Create a New Review</h2>
@@ -158,6 +169,7 @@ class Movie extends React.Component {
                     </form>
                     <button onClick={this.handleSubmit}>Submit Review</button>
                     {"\n"}
+                    </div>
                 </div>
             </div>
         )

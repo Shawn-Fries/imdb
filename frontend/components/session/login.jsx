@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../../app/assets/images/imdb_logo.png'
 
 class Login extends React.Component {
     constructor(props) {
@@ -33,7 +32,7 @@ class Login extends React.Component {
         return (
             <div>
                 {"\n"}
-                <img src={logo}/>
+                <h1 id="splash-logo">IMDb Clone</h1>
             
             <div className="session-form">
                 <h2>Sign-In</h2>
