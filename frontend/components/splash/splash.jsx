@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import spiderman from '/app/assets/images/spiderman.png'
+// import spiderman from '/app/assets/images/spiderman.png'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
@@ -13,17 +13,17 @@ export default () => (
             <Carousel direction='horizontal'>
                 <div>
                 <Link to="/movies/1">
-                    <img src={spiderman}/>
+                        <img src={window.spidermanURL}/>
                 </Link>
                 </div>
                 <div>
                     <Link to="/movies/2">
-                        <img src={spiderman} />
+                        <img src={window.spidermanURL} />
                     </Link>
                 </div>
                 <div>
                     <Link to="/movies/3">
-                        <img src={spiderman} />
+                        <img src={window.spidermanURL} />
                     </Link>
                 </div>
             </Carousel>

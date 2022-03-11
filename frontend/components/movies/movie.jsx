@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import spiderman from '/app/assets/images/spiderman.png'
+// import spiderman from '/app/assets/images/spiderman.png'
 
 class Movie extends React.Component {
     constructor(props) {
@@ -73,7 +73,7 @@ class Movie extends React.Component {
                     <h3>{genre}</h3>
                 </div>
                     <div id="movie_image">
-                        <img src={spiderman} />
+                        <img src={window.spidermanURL} />
                     </div>
                 <div id="description">
                     <h3>{description}</h3>
