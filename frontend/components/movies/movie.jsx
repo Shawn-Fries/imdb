@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import spiderman from '../../../app/assets/images/spiderman.png'
+import spiderman from '/app/assets/images/spiderman.png'
 
 class Movie extends React.Component {
     constructor(props) {
