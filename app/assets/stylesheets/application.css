@@ -18,14 +18,23 @@
 
  html {
      text-align: center;
+     background-color: #FAFAFA;
  }
 
- h1 {
+ #splash-logo {
     font-weight: 900;
     font-family: 'League Gothic', sans-serif;
     font-size: 5em;
     background: gold;
     margin: .8em;
+    padding: .2em;
+    color: #101;
+    display: inline;
+    position: absolute;
+    left: 3em;
+    margin:0em;
+    padding-top: 0em;
+    font-size: 3em;
  }
 
  h2 {
@@ -34,22 +43,139 @@
      margin: .6em;
  }
 
+ h3 {
+     margin: 2em;
+ }
+
  .label {
      font-weight: bold;
      margin: 1em;
  }
 
+ #splash-logo {
+    
+ }
+
+ .signin-link {
+    position: absolute;
+    right: 0em;
+    top: 0em;
+    color: #FAFAFA;
+    font-weight: bold;
+    background: #10111E;
+    padding: 1em;
+    height: 1em;
+    width: 5em;
+    text-align: center;
+ }
+
+ #title {
+    padding-top: 5em;
+    display: flex;
+    left: 3em;
+    margin-left: 7.7em;
+ }
+
+ #release_date {
+    display: flex;
+    align-items: left;
+    padding: 0em;
+    margin: 0em;
+    margin-left: 6.8em;
+ }
+
+  #genre {
+    display: flex;
+    align-items: left;
+    padding: 0em;
+    margin: 0em;
+    left: 3em;
+    margin-left: 6.8em;
+ }
+
+  #description {
+    display: flex;
+    margin-left: 6.2em;
+    margin-right: 30em;
+ }
+
+ #movie_image > img {
+     display: flex;
+     align-items: left;
+     width: 30%;
+     margin: 0.5em;
+     padding-top: 0em;
+     padding-left: .5em;
+     margin-left: 8em;
+ }
+
+ #reviews {
+     background-color: #FAFAFA;
+     color: #010101;
+ }
+
+ #reviews > h2 {
+    position: absolute;
+    left: 3.5em;
+ }
+
+ #reviews > h1 {
+     font-weight: bold;
+     font-size: 2em;
+     margin: 2em;
+     padding: 2em;
+ }
+
+ #reviews > div {
+    padding: 3em;
+    margin: 3em;
+    text-align: left;
+ }
+
+ .splash {
+     background-color: #010101;
+     min-height: 100%;
+ }
+
+ .movie {
+     background-color: #202020;
+     color: #FAFAFA;
+     
+ }
+
  button {
      background: gold;
      margin: 1em;
+     width: 10em;
  }
 
- a, a:hover, a:visited, a:active {
-  color: inherit;
+ label {
+    display: inline-block;
+    width: 10em;
+    text-align: left;
+ }
+
+ a, a:visited, a:hover {
   text-decoration: none;
  }
 
- .session-form {
-     background-color: lightgrey;
-     white-space: pre-line;
+ img {
+     margin: 5em;
+     width: 30%;
  }
+
+ .session-form {
+     border-style: ridge;
+     border-width: 1px;
+     margin: 1em;
+     display: inline-flexbox;
+     white-space: pre-line;
+     font-weight: bolder;
+     text-align: center;
+ }
+
+ /* #spiderman > Link > img {
+     margin: 30em;
+     height: 5%;
+     display: inline-flexbox;
+ } */

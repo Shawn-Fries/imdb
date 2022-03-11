@@ -33,13 +33,16 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.3",
+    "css-loader": "^6.7.1",
     "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^5.2.0",
     "redux": "^4.1.2",
     "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.1",
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2"
   }

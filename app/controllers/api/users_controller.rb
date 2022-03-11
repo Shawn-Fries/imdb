@@ -6,9 +6,7 @@ class Api::UsersController < ApplicationController
       login!(@user)
       redirect_to user_url(@user)
     else
-      @user = User.new
-      flash.now[:errors] = { base: ['Demo login not working, please try again or ask a developer'] }
-      render :new
+      render json: @user.errors.full_messages, status: 401
     end
   end
 
@@ -18,8 +16,7 @@ class Api::UsersController < ApplicationController
       login!(@user)
       render :show
     else
-      flash.now[:errors] = @user.errors
-      render :new
+      render json: @user.errors.full_messages, status: 401
     end
   end
 

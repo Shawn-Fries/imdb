@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux'
 import sessionReducer from './session'
-import entitiesReducer from './entities'
+import moviesReducer from './movies'
+import reviewsReducer from './reviews'
 
 export default combineReducers({
-    entities: entitiesReducer,
+    movies: moviesReducer,
+    reviews: reviewsReducer,
     session: sessionReducer
 })
