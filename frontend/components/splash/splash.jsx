@@ -13,7 +13,7 @@ export default () => (
             <Carousel direction='horizontal'>
                 <div>
                 <Link to="/movies/1">
-                        <img src={window.spidermanURL}/>
+                        <img src={window.licoricePizzaURL} />
                 </Link>
                 </div>
                 <div>
@@ -23,7 +23,7 @@ export default () => (
                 </div>
                 <div>
                     <Link to="/movies/3">
-                        <img src={window.spidermanURL} />
+                        <img src={window.goodBadURL} />
                     </Link>
                 </div>
             </Carousel>
