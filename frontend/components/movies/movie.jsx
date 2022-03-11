@@ -9,7 +9,7 @@ class Movie extends React.Component {
             body: '',
             rating: 1,
             author_id: 1,
-            movie_id: 1
+            movie_id: this.props.match.params.movieId
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleReview = this.handleReview.bind(this)
