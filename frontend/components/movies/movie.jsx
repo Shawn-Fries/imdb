@@ -5,7 +5,6 @@ import spiderman from '/app/assets/images/spiderman.png'
 class Movie extends React.Component {
     constructor(props) {
         super(props)
-        console.log(this.props)
         this.state = {
             body: '',
             rating: 1,
@@ -53,9 +52,7 @@ class Movie extends React.Component {
         }
         let reviews = []
         if (this.props.reviews) {
-            console.log(reviews)
             reviews = Object.values(this.props.reviews)
-            console.log(reviews)
         }
         return (
             <div className="movie">
@@ -88,7 +85,7 @@ class Movie extends React.Component {
                 {"\n"}
                 {reviews.map(review => (
                     <div key={review.id}>
-                        <h3>Rating: {review.rating}</h3>
+                        <h3>⭐{review.rating}/10</h3>
                         {"\n"}
                         <h3>Review: {review.body}</h3>
                         {"\n"}
