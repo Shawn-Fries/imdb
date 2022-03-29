@@ -5,5 +5,9 @@ class Movie < ApplicationRecord
         foreign_key: :movie_id,
         class_name: :Review
 
+    has_many :showtimes,
+        foreign_key: :movie_id,
+        class_name: :Showtime
+
 end
 
