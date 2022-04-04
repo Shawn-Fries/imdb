@@ -9,6 +9,7 @@ export default () => (
         <h1 id="splash-logo">IMDb Clone</h1>
         {/* <Search/> */}
         <Link className="signin-link" to="/login">Sign In</Link>
+        <Link className="showtimes-link" to="/showtimes/00000">Showtimes</Link>
         <div className="carousel-wrapper">
             <Carousel direction='horizontal'>
                 <div>
