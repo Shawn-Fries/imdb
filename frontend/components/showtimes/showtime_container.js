@@ -1,16 +1,15 @@
 import { connect } from 'react-redux'
-import { fetchReviews, createReview } from '../../actions/reviews'
-import Review from './review'
+import { fetchShowtimes } from '../../actions/showtimes'
+import Showtime from './showtime'
 
 const mapStateToProps = (state, ownProps) => ({
-    //movieId: parseInt(match.params.movieId)
+    zipCode: match.params.zipCode,
     //reviews: state.movies[ownProps.match.params.movieId]
-    reviews: state.reviews
+    showtimes: state.showtimes
 })
 
 const mapDispatchToProps = dispatch => ({
-    fetchReviews: () => dispatch(fetchReviews()),
-    createReview: review => dispatch(createReview(review))
+    fetchShowtimes: zipCode => dispatch(fetchShowtimes(zipCode))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Review);
+export default connect(mapStateToProps, mapDispatchToProps)(Showtime);
