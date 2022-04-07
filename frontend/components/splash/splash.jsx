@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
+//const images = [{img}]
+
 export default () => (
     <div className="splash">
         <h1 id="splash-logo">IMDb Clone</h1>
@@ -14,17 +16,23 @@ export default () => (
             <Carousel direction='horizontal'>
                 <div>
                 <Link to="/movies/1">
+                    <div>
                         <img src={window.licoricePizzaURL} />
+                    </div>
                 </Link>
                 </div>
                 <div>
                     <Link to="/movies/2">
-                        <img src={window.spidermanURL} />
+                        <div>
+                            <img src={window.spidermanURL} />
+                        </div>
                     </Link>
                 </div>
                 <div>
                     <Link to="/movies/3">
-                        <img src={window.goodBadURL} />
+                        <div>
+                            <img src={window.goodBadURL} />
+                        </div>
                     </Link>
                 </div>
             </Carousel>
