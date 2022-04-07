@@ -1,6 +1,6 @@
 class ShowtimesController < ApplicationController
     def show
-        @review = Review.where(theater_id: find_closest_theater(params[:zip_code]))
+        @showtimes = Showtime.where(theater_id: find_closest_theater(params[:zip_code]))
     end
 
     # private

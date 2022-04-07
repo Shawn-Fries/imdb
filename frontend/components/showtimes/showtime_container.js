@@ -3,8 +3,7 @@ import { fetchShowtimes } from '../../actions/showtimes'
 import Showtime from './showtime'
 
 const mapStateToProps = (state, ownProps) => ({
-    zipCode: match.params.zipCode,
-    //reviews: state.movies[ownProps.match.params.movieId]
+    zipCode: ownProps.match.params.zipCode,
     showtimes: state.showtimes
 })
 

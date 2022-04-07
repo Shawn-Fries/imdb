@@ -10,9 +10,9 @@ import ShowtimeContainer from './showtimes/showtime_container'
 export default () => (
     <div>
         <Route exact path="/" component={Splash}/>
-        <Route path="/movies/:movieId" component={MovieContainer} />
-        <Route path="/showtimes/:zipCode" component={ShowtimeContainer} />
-        <AuthRoute path="/signup" component={SignupContainer} />
-        <AuthRoute path="/login" component={LoginContainer} />
+        <Route exact path="/movies/:movieId" component={MovieContainer} />
+        <Route exact path="/showtimes" component={ShowtimeContainer} />
+        <AuthRoute exact path="/signup" component={SignupContainer} />
+        <AuthRoute exact path="/login" component={LoginContainer} />
     </div>
 )
