@@ -160,11 +160,11 @@
     height: 100%;
 }
 
- img {
-     /* margin: 5em; */
-     /* width: 90%; */
-     /* height: 10%; */
- }
+ /* img {
+    margin: 5em;
+    width: 90%;
+    height: 10%;
+ } */
 
  .session-form {
      border-style: ridge;
@@ -176,8 +176,15 @@
      text-align: center;
  }
 
- /* #spiderman > Link > img {
-     margin: 30em;
-     height: 5%;
-     display: inline-flexbox;
- } */
+ .movie_image > a > img {
+     display: flex;
+     align-items: left;
+     max-width: 50%;
+     max-height: 50%;
+     width: auto;
+     height: auto;
+     margin: 0.5em;
+     padding-top: 5em;
+     padding-left: .5em;
+     margin-left: 8em;
+ }
