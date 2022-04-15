@@ -6,6 +6,11 @@ class Showtime < ApplicationRecord
         class_name: :Movie
 
     def self.find_closest_theater(comparison_zip)
-        Showtime.select('theater_id').order(`ABS(CAST(zip_code AS INTEGER) - CAST(#{comparison_zip} AS INTEGER))`).first
+        Showtime.find_by_sql(<<-SQL)
+            SELECT *
+            FROM showtimes
+            ORDER BY ABS(CAST(zip_code AS INTEGER) - CAST(#{comparison_zip} AS INTEGER))
+            LIMIT 1
+        SQL
     end
 end
