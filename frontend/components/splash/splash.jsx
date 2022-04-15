@@ -9,11 +9,13 @@ export default () => (
         <h1 id="splash-logo">IMDb Clone</h1>
         {/* <Search/> */}
         <Link className="signin-link" to="/login">Sign In</Link>
-                <div className='movie_image'>
-                <Link to="/movies/1">
-                        <img src={window.licoricePizzaURL} />
-                </Link>
-                </div>
+        <Link className="showtimes-link" to="/showtimes">Showtimes</Link>
+        <div className='movie_image'>
+            <Link to="/movies/1">
+                <img src={window.licoricePizzaURL} />
+            </Link>
+        </div>
+        
         <div className='movie_image'>
                     <Link to="/movies/2">
                         <img src={window.spidermanURL} />

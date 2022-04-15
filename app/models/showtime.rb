@@ -5,7 +5,7 @@ class Showtime < ApplicationRecord
         foreign_key: :movie_id,
         class_name: :Movie
 
-    def find_closest_theater(zip_code)
-        Showtime.select('theater_id').order(`CAST(zip_code AS INTEGER) - CAST(#{zip_code} AS INTEGER)`).first
+    def self.find_closest_theater(comparison_zip)
+        Showtime.select('theater_id').order(`ABS(CAST(zip_code AS INTEGER) - CAST(#{comparison_zip} AS INTEGER))`).first
     end
 end

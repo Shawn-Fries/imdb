@@ -7,7 +7,7 @@ class Showtime extends React.Component {
         super(props)
         this.state = {
             theaterId: 1,
-            zipCode: '00000'
+            zipCode: '37901'
         }
     }
 
