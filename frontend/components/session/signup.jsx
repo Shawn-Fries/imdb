@@ -27,7 +27,7 @@ class Signup extends React.Component {
         return (
             <div>
                 {"\n"}
-                <h1 id="splash-logo">IMDb Clone</h1>
+                <h1 id="splash-logo">MyMDb</h1>
             
             <div className="session-form">
                 
@@ -42,7 +42,7 @@ class Signup extends React.Component {
                             <input type="password" value={this.state.password} onChange={this.handleInput('password')} />
                         </label>
                         {" \n "}
-                    <button onClick={this.handleSubmit}>Create your IMDb Clone Account</button>
+                    <button onClick={this.handleSubmit}>Create your MyMDb Clone Account</button>
                 </form>
                     {" \n "}
                 <Link to="/login">Already have an account?</Link>

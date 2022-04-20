@@ -32,7 +32,7 @@ class Login extends React.Component {
         return (
             <div>
                 {"\n"}
-                <h1 id="splash-logo">IMDb Clone</h1>
+                <h1 id="splash-logo">MyMDb</h1>
             
             <div className="session-form">
                 <h2>Sign-In</h2>
@@ -50,7 +50,7 @@ class Login extends React.Component {
                 </form>
                 <button onClick={this.handleDemo}>Demo Login</button>
                 {"\n"}
-                <Link to="/signup">Create your IMDb Clone Account</Link>
+                <Link to="/signup">Create your MyMDb Account</Link>
             </div>
             </div>
         )
