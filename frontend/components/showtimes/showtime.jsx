@@ -31,6 +31,10 @@ class Showtime extends React.Component {
         // if (this.props.reviews) {
         //     reviews = Object.values(this.props.reviews)
         // }
+        let showtimes = []
+        if (this.props.showtimes) {
+            showtimes = Object.values(this.props.showtimes)
+        }
         return (
             <div className="showtime">
                 <div id="info">
@@ -41,7 +45,14 @@ class Showtime extends React.Component {
                         <Link className="signin-link" to="/login">Sign In</Link>
                     </div>
                     <div id="showtime">
-                        <h2>{this.props.showtime}</h2>
+                        {showtimes.map(showtime => (
+                            <div key={showtime.id}>
+                                <h3>Movie: {showtime.movie_id}</h3>
+                                {"\n"}
+                                <h3>Time: {showtime.time}</h3>
+
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
