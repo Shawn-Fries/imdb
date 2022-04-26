@@ -47,7 +47,7 @@ class Showtime extends React.Component {
                     <div id="showtime">
                         {showtimes.map(showtime => (
                             <div key={showtime.id}>
-                                <h3>Movie: {showtime.movie_id}</h3>
+                                <h3>Movie: {showtime.movie.title}</h3>
                                 {"\n"}
                                 <h3>Time: {showtime.time.substring(11, 16)}</h3>
 
