@@ -49,7 +49,7 @@ class Showtime extends React.Component {
                             <div key={showtime.id}>
                                 <h3>Movie: {showtime.movie_id}</h3>
                                 {"\n"}
-                                <h3>Time: {showtime.time}</h3>
+                                <h3>Time: {showtime.time.substring(11, 16)}</h3>
 
                             </div>
                         ))}
