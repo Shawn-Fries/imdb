@@ -151,7 +151,8 @@
  }
 
  a, a:visited, a:hover {
-  text-decoration: none;
+    text-decoration: none;
+    color: #FAFAFA;
  }
 
  /* img {
