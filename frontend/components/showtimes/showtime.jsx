@@ -9,10 +9,18 @@ class Showtime extends React.Component {
             theaterId: 1,
             zipCode: '37901'
         }
+        this.handleZip = this.handleZip.bind(this)
     }
 
     componentDidMount() {
         this.props.fetchShowtimes(this.state.zipCode)
+    }
+
+    handleZip(e) {
+        e.preventDefault()
+        this.setState({ zipCode: this.props.zipCode })
+        this.props.fetchShowtimes(this.state.zipCode)
+
     }
 
     render() {
@@ -44,12 +52,18 @@ class Showtime extends React.Component {
                     <div>
                         <Link className="signin-link" to="/login">Sign In</Link>
                     </div>
+                    <div>
+                        <label>Please enter your zip code
+                            <input id="zipCode" name="zipCode" value={this.state.zipCode} onChange={this.handleZip} />
+                        </label>
+
+                    </div>
                     <div id="showtime">
                         {showtimes.map(showtime => (
                             <div key={showtime.id}>
-                                <h3>Movie: {showtime.movie.title}</h3>
+                                <h3>{showtime.movie.title}</h3>
                                 {"\n"}
-                                <h3>Time: {showtime.time.substring(11, 16)}</h3>
+                                <h3>{showtime.time.substring(11, 16)}</h3>
 
                             </div>
                         ))}
