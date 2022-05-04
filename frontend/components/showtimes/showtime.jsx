@@ -52,7 +52,7 @@ class Showtime extends React.Component {
                     <div>
                         <Link className="signin-link" to="/login">Sign In</Link>
                     </div>
-                    <div>
+                    <div id="zipForm">
                         <label>Please enter your zip code
                             <input id="zipCode" name="zipCode" value={this.state.zipCode} onChange={this.handleZip} />
                         </label>
