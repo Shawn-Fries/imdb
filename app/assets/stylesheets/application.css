@@ -21,7 +21,7 @@
      background-color: #FAFAFA;
  }
 
-.time {
+.time, .showtimeTitle {
     color: blue;
 }
 
