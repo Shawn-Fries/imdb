@@ -21,6 +21,10 @@
      background-color: #FAFAFA;
  }
 
+.time {
+    color: blue;
+}
+
  #splash-logo {
     font-weight: 900;
     font-family: 'League Gothic', sans-serif;
