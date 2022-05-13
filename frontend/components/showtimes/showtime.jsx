@@ -52,11 +52,19 @@ class Showtime extends React.Component {
                     <div>
                         <Link className="signin-link" to="/login">Sign In</Link>
                     </div>
+                    <div id="location">
+                        Set your location
+                    </div>
                     <div id="zipForm">
-                        <label>Please enter your zip code
-                            <input id="zipCode" name="zipCode" value={this.state.zipCode} onChange={this.handleZip} />
+                        <label>Please enter a valid postal code.
+                            <div id="zipBox">
+                                <input id="zipCode" name="zipCode" value={this.state.zipCode} onChange={this.handleZip} />
+                            </div>
                         </label>
 
+                    </div>
+                    <div id="showtimeInfo">
+                        Showing times for the nearest theater near you.
                     </div>
                     <div id="showtime">
                         {showtimes.map(showtime => (

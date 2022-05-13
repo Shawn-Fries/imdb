@@ -21,6 +21,10 @@
      background-color: #FAFAFA;
  }
 
+ #location {
+     font-weight: bold;
+ }
+
 .time, .showtimeTitle {
     color: blue;
 }
@@ -116,6 +120,21 @@
  #reviews > h2 {
     position: absolute;
     left: 3.5em;
+ }
+
+ #zipBox {
+     margin-top: 1em;
+ }
+
+ #showtimeInfo {
+     margin-top: 1em;
+ }
+
+ #zipForm {
+     margin-top: 1em;
+     white-space: nowrap;
+     font-weight: lighter;
+     color: #383838;
  }
 
  #reviews > h1 {
