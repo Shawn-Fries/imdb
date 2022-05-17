@@ -64,7 +64,7 @@ class Showtime extends React.Component {
 
                     </div>
                     <div id="showtimeInfo">
-                        Showing times for the nearest theater near you.
+                        Showing times for the theater nearest to you.
                     </div>
                     <div id="showtime">
                         {showtimes.map(showtime => (
@@ -74,7 +74,7 @@ class Showtime extends React.Component {
                                 </div>
                                 {"\n"}
                                 <div className='time'>
-                                <h3>{showtime.time.substring(11, 16)}</h3>
+                                    <h3>{new Date(showtime.time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</h3>
                                 </div>
 
                             </div>
