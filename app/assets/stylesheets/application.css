@@ -29,6 +29,10 @@
     color: blue;
 }
 
+.showtimeTitle {
+    font-weight: bolder;
+}
+
  #splash-logo {
     font-weight: 900;
     font-family: 'League Gothic', sans-serif;
@@ -128,13 +132,14 @@
 
  #showtimeInfo {
      margin-top: 1em;
+     color: #505050;
  }
 
  #zipForm {
      margin-top: 1em;
      white-space: nowrap;
      font-weight: lighter;
-     color: #383838;
+     color: #505050;
  }
 
  #reviews > h1 {
