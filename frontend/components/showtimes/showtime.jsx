@@ -70,7 +70,11 @@ class Showtime extends React.Component {
                         {showtimes.map(showtime => (
                             <div key={showtime.id}>
                                 <div className='showtimeTitle'>
-                                    <h3>{showtime.movie.title}</h3>
+                                    <Link to={`/movies/${showtime.movie_id}`}>
+                                        <div className="showtimeMovieName">
+                                        <h3>{showtime.movie.title}</h3>
+                                        </div>
+                                    </Link>
                                 </div>
                                 {"\n"}
                                 <div className='time'>
