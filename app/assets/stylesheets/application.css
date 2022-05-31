@@ -40,7 +40,6 @@
     background: gold;
     padding: .2em;
     color: #101;
-    display: inline;
     position: absolute;
     left: 3em;
     margin:0em;
@@ -136,7 +135,8 @@
  }
 
  #zipForm {
-     margin-top: 1em;
+     align-items: center;
+     padding-top: 5em;
      white-space: nowrap;
      font-weight: lighter;
      color: #505050;
