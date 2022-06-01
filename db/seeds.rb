@@ -14,6 +14,6 @@
 # Review.create(rating: 1, body: 'Pretentious', author_id: 2, movie_id: 1)
 
 
-# Showtime.create(theater_id: 1, movie_id: 1, zip_code: '37901', time: '2022-05-01 14:05:00')
-# Showtime.create(theater_id: 1, movie_id: 2, zip_code: '37901', time: '2022-05-01 14:30:00')
-# Showtime.create(theater_id: 1, movie_id: 3, zip_code: '37901', time: '2022-05-01 17:05:00')
+# Showtime.create(theater_id: 2, movie_id: 1, zip_code: '02116', time: '2022-05-01 19:15:00')
+# Showtime.create(theater_id: 2, movie_id: 2, zip_code: '02116', time: '2022-05-01 18:10:00')
+# Showtime.create(theater_id: 2, movie_id: 3, zip_code: '02116', time: '2022-05-01 17:30:00')
