@@ -26,7 +26,7 @@
  }
 
 .time, .showtimeTitle, .showtimeMovieName {
-    color: blue;
+    color: royalblue;
 }
 
 .showtimeTitle {
@@ -126,17 +126,25 @@
  }
 
  #zipBox {
-     margin-top: 1em;
+    padding-top: 1em;
+ }
+
+ #location {
+    padding-top: 3em;
+    font-weight: bolder;
+    font-size: 1.5em;
  }
 
  #showtimeInfo {
      margin-top: 1em;
      color: #505050;
+     padding-bottom: 5em;
  }
 
  #zipForm {
-     align-items: center;
-     padding-top: 5em;
+     align-items: left;
+     padding-right: 1em;
+     padding-top: 2em;
      white-space: nowrap;
      font-weight: lighter;
      color: #505050;

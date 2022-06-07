@@ -51,6 +51,9 @@ class Showtime extends React.Component {
                     <div>
                         <Link className="signin-link" to="/login">Sign In</Link>
                     </div>
+                    <div id="location">
+                        Set your location
+                    </div>
                     <div id="zipForm">
                         <label>Please enter a valid postal code.
                             <div id="zipBox">
