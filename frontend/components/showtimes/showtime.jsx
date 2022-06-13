@@ -17,9 +17,8 @@ class Showtime extends React.Component {
     }
 
     handleZip(e) {
-        e.preventDefault()
         this.setState({ zipCode: e.target.value })
-        this.props.fetchShowtimes(this.props.match.params.zipCode)
+        this.props.fetchShowtimes(this.state.zipCode)
     }
 
     render() {

@@ -2,8 +2,8 @@ import { connect } from 'react-redux'
 import { fetchShowtimes } from '../../actions/showtimes'
 import Showtime from './showtime'
 
-const mapStateToProps = (state, ownProps) => ({
-    zipCode: ownProps.match.params.zipCode,
+const mapStateToProps = state => ({
+    zipCode: state.zipCode,
     showtimes: state.showtimes
 })
 
