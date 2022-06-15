@@ -45,7 +45,9 @@ class Showtime extends React.Component {
             <div className="showtime">
                 <div id="info">
                     <div>
-                        <h1 id="splash-logo">MyMDb</h1>
+                        <Link to='/'>
+                            <h1 id="splash-logo">MyMDb</h1>
+                        </Link>
                     </div>
                     <div>
                         <Link className="signin-link" to="/login">Sign In</Link>
