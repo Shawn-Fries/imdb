@@ -27,7 +27,9 @@ class Signup extends React.Component {
         return (
             <div>
                 {"\n"}
-                <h1 id="splash-logo">MyMDb</h1>
+                <Link to='/'>
+                    <h1 id="splash-logo">MyMDb</h1>
+                </Link>
             
             <div className="session-form">
                 

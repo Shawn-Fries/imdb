@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom'
 
 export default () => (
     <div className="splash">
-        <h1 id="splash-logo">MyMDb</h1>
+        <Link to='/'>
+            <h1 id="splash-logo">MyMDb</h1>
+        </Link>
         {/* <Search/> */}
         <Link className="signin-link" to="/login">Sign In</Link>
         <Link className="showtimes-link" to="/showtimes">Showtimes</Link>
