@@ -75,6 +75,10 @@
     text-align: center;
  }
 
+ .showtimes-link {
+    padding-top: 1em;
+ }
+
  #title {
     padding-top: 5em;
     display: flex;

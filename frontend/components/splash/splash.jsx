@@ -11,7 +11,9 @@ export default () => (
         </Link>
         {/* <Search/> */}
         <Link className="signin-link" to="/login">Sign In</Link>
-        <Link className="showtimes-link" to="/showtimes">Showtimes</Link>
+        <div className="showtimes-link">
+            <Link to="/showtimes">Showtimes near you</Link>
+        </div>
         <div className='movie_image'>
             <Link to="/movies/1">
                 <img src={window.licoricePizzaURL} />
