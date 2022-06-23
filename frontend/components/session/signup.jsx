@@ -44,10 +44,12 @@ class Signup extends React.Component {
                             <input type="password" value={this.state.password} onChange={this.handleInput('password')} />
                         </label>
                         {" \n "}
-                    <button onClick={this.handleSubmit}>Create your MyMDb Clone Account</button>
+                    <button onClick={this.handleSubmit}>Create your MyMDb Account</button>
                 </form>
                     {" \n "}
-                <Link to="/login">Already have an account?</Link>
+                <button id="login">
+                    <Link to="/login">Already have an account?</Link>
+                </button>
             </div>
             </div>
         )

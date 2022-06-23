@@ -52,7 +52,8 @@ class Login extends React.Component {
                 </form>
                 <button onClick={this.handleDemo}>Demo Login</button>
                 {"\n"}
-                <Link to="/signup">Create your MyMDb Account</Link>
+                    <button id="signup"><Link to="/signup">Create your MyMDb Account</Link>
+                    </button>
             </div>
             </div>
         )

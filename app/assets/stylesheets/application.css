@@ -207,6 +207,10 @@
      text-align: center;
  }
 
+ #signup > a, #login > a {
+     color: #010101;
+ }
+
  .movie_image > a > img {
      display: flex;
      align-items: left;
