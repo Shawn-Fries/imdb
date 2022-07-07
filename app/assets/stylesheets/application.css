@@ -21,10 +21,6 @@
      background-color: #FAFAFA;
  }
 
- #location {
-     font-weight: bold;
- }
-
 .time, .showtimeTitle, .showtimeMovieName {
     color: royalblue;
 }
@@ -135,6 +131,7 @@
 
  #location {
     padding-top: 3em;
+    padding-right: 5.5em;
     font-weight: bolder;
     font-size: 1.5em;
  }
@@ -147,10 +144,9 @@
 
  #zipForm {
      align-items: left;
-     padding-right: 1em;
-     padding-top: 2em;
+     padding-right: 10em;
+     padding-top: .7em;
      white-space: nowrap;
-     font-weight: lighter;
      color: #505050;
  }
 
