@@ -38,6 +38,19 @@ class Movie extends React.Component {
 
     }
 
+    renderImage(movieId) {
+        switch (movieId) {
+            case '1':
+                return window.licoricePizzaURL;
+            case '2':
+                return window.spidermanURL;
+            case '3':
+                return window.goodBadURL;
+            case '4':
+                return window.topGunURL;
+        }
+    }
+
     render() {
         let description = ''
         let title = ''
@@ -75,7 +88,7 @@ class Movie extends React.Component {
                     <h3>{genre}</h3>
                 </div>
                     <div id="movie_image">
-                        <img src={window.spidermanURL} />
+                        <img src={this.renderImage(this.props.match.params.movieId)}/>
                     </div>
                 <div id="description">
                     <h3>{description}</h3>
