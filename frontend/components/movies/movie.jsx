@@ -98,6 +98,7 @@ class Movie extends React.Component {
                 <div id="reviews">
                 <h2>User reviews</h2>
                 {"\n"}
+                <div>
                 {reviews.map(review => (
                     <div key={review.id}>
                         <h3>⭐{review.rating}/10</h3>
@@ -108,7 +109,10 @@ class Movie extends React.Component {
                         
                     </div>
                 ))}
+                </div>
+                <div id="newReview">
                 <h2>Create a New Review</h2>
+                    
                 <div className="review-form">
                     <form>
                         <div>
@@ -181,6 +185,7 @@ class Movie extends React.Component {
                     </form>
                     <button onClick={this.handleSubmit}>Submit Review</button>
                     {"\n"}
+                    </div>
                     </div>
                 </div>
             </div>

@@ -49,6 +49,11 @@
      margin: .6em;
  }
 
+ #newReview > h2 {
+     position: relative;
+     left: -.7em;
+ }
+
  h3 {
      margin: 2em;
  }
