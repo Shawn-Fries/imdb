@@ -145,6 +145,8 @@
      margin-top: 1em;
      color: #505050;
      padding-bottom: 5em;
+     position: relative;
+     right: 1em;
  }
 
  #zipForm {
