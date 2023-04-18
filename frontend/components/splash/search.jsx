@@ -5,7 +5,7 @@ class Search extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            searchTerm: ''
+            search_term: ''
         }
         this.handleInput = this.handleInput.bind(this)
     }
@@ -19,7 +19,10 @@ class Search extends React.Component {
     render() {
         return (
             <div>
-                
+                <input type='search'
+                placeholder=''
+                onChange={this.handleInput}
+                />
             </div>
         )
     }

@@ -10,7 +10,7 @@
 # Movie.create(title: 'Licorice Pizza', genre: 'Comedy', release_date: '2021-11-26 00:00:00', description: 'The story of Alana Kane and Gary Valentine growing up, running around and going through the treacherous navigation of first love in the San Fernando Valley, 1973.')
 # Movie.create(title: 'Spider-Man: Into the Spider-Verse', genre: 'Action', release_date: '2018-12-01 00:00:00', description: 'Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.')
 # Movie.create(title: 'The Good, the Bad and the Ugly', genre: 'Western', release_date: '1966-12-23 00:00:00', description: 'A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.')
-Movie.create(title: 'Top Gun: Maverick', genre: 'Action', release_date: '2022-05-27 00:00:00', description: "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.")
+#Movie.create(title: 'Top Gun: Maverick', genre: 'Action', release_date: '2022-05-27 00:00:00', description: "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.")
 # Review.create(rating: 10, body: 'Profound', author_id: 1, movie_id: 1)
 # Review.create(rating: 1, body: 'Pretentious', author_id: 2, movie_id: 1)
 
