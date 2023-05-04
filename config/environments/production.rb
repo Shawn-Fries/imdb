@@ -92,6 +92,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  # Fix uglifier issue
-  config.assets.precompile[0] =  Proc.new { |path| !File.extname(path).in?(['.js', '.css', '.map']) }
+  
 end
