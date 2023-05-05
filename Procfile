@@ -1,1 +1,1 @@
-web: imdb
+web: rails s
