@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: imdb_clone_production
-  username: imdb_clone
-  password: <%= ENV['IMDB_CLONE_DATABASE_PASSWORD'] %>
+  url: ENV['DATABASE_URL']
