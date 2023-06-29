@@ -1,4 +1,4 @@
-rails# PostgreSQL. Versions 9.1 and up are supported.
+# PostgreSQL. Versions 9.1 and up are supported.
 #
 # Install the pg driver:
 #   gem install pg
@@ -80,4 +80,6 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  database: imdb_clone_production
+  username: imdb_clone
+  password: <%= ENV['IMDB_CLONE_DATABASE_PASSWORD'] %>
