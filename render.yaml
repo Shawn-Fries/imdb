@@ -3,8 +3,8 @@
 # Schema documented at https://render.com/docs/yaml-spec
 databases:
   - name: imdb-shawn
-    databaseName: imdb-shawn
-    user: imdb-shawn
+    databaseName: mymdb
+    user: mymdb_user
 
 services:
   - type: web # valid values: https://render.com/docs/yaml-spec#type
