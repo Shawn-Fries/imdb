@@ -2,13 +2,13 @@
 # https://www.npmjs.com/package/@renderinc/heroku-import
 # Schema documented at https://render.com/docs/yaml-spec
 databases:
-  - name: imdb-shawn
+  - name: imdb_shawn
     databaseName: mymdb
     user: mymdb_user
 
 services:
   - type: web # valid values: https://render.com/docs/yaml-spec#type
-    name: imdb-shawn
+    name: imdb_shawn
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
